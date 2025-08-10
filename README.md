@@ -1,43 +1,72 @@
 # 🛒 E-Commerce 쇼핑몰 프로젝트
 
-<div align="center">
-
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-6DB33F?style=for-the-badge&logo=spring-boot)
-![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)
-![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=java)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.11-06B6D4?style=for-the-badge&logo=tailwind-css)
-![H2 Database](https://img.shields.io/badge/H2%20Database-2.2.224-000000?style=for-the-badge&logo=h2)
-![Maven](https://img.shields.io/badge/Maven-3.9.11-C71A36?style=for-the-badge&logo=apache-maven)
-
-**Spring Boot + React로 구현한 풀스택 쇼핑몰 시스템**
-
 실무에서 사용하는 주요 기능들을 모두 포함한 완전한 이커머스 플랫폼입니다.
 
-[🚀 빠른 시작](#-빠른-시작) • [📋 기능 목록](#-주요-기능) • [🛠️ 기술 스택](#️-기술-스택) • [📖 문서](#-문서)
+## 🚀 기술 스택
 
-</div>
+| **Frontend** |![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)|
+|------|------|
+| **Backend** |![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)|
+| **Server** |![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black) ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white) |
+| **DB** | ![H2 Database](https://img.shields.io/badge/H2%20Database-007DB8?style=for-the-badge&logo=h2&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)| 
+| **Tools** | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white) ![DataGrip](https://img.shields.io/badge/DataGrip-000000?style=for-the-badge&logo=datagrip&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) |
 
----
+## 🏗️ 시스템 아키텍처
+![](https://ifh.cc/g/RNOlZ9.png)
 
-## 📋 목차
+## 📊 데이터베이스 스키마 (ERD)
 
-- [🚀 빠른 시작](#-빠른-시작)
-- [프로젝트 개요](#-프로젝트-개요)
-- [주요 기능](#-주요-기능)
-- [🏗️ 시스템 아키텍처](#️-시스템-아키텍처)
-- [기술 스택](#️-기술-스택)
-- [프로젝트 구조](#-프로젝트-구조)
-- [설치 및 실행](#-설치-및-실행)
-- [데이터베이스 설계](#-데이터베이스-설계)
-- [API 명세서](#-api-명세서)
-- [주요 페이지](#-주요-페이지)
-- [핵심 기능 설명](#-핵심-기능-설명)
-- [개발 환경](#-개발-환경)
-- [배포 가이드](#-배포-가이드)
-- [기여 가이드](#-기여-가이드)
-- [라이선스](#-라이선스)
+추후 추가
 
----
+## 🌟 주요 기능
+
+### 👤 사용자 기능
+- **회원가입/로그인**: JWT 토큰 기반 인증
+- **프로필 관리**: 개인정보 수정
+- **상품 조회**: 목록, 상세, 검색, 필터링
+- **장바구니**: 상품 추가/수정/삭제, 수량 조절
+- **주문 관리**: 주문 생성, 조회, 취소
+- **주문 내역**: 개인 주문 히스토리
+
+### 👨‍💼 관리자 기능
+- **상품 관리**: CRUD, 할인율 설정, 재고 관리
+- **카테고리 관리**: 상품 분류 시스템
+- **주문 관리**: 전체 주문 조회, 상태 변경
+- **파일 업로드**: 상품 이미지 업로드
+- **통계 대시보드**: 매출, 주문 현황
+
+### 🛍️ 쇼핑 기능
+- **상품 분류**: 인기상품, 신상품 태깅
+- **할인 시스템**: 동적 할인율 계산
+- **검색 기능**: 실시간 검색 (최소 2글자)
+- **필터링**: 카테고리별, 가격별 필터
+- **페이징**: 페이지네이션 지원
+- **슬라이더**: 홈페이지 상품 슬라이더
+
+## 프로젝트 사용자 화면 및 시연 영상
+### 시연 영상
+
+### 사용자 화면
+| 메인 화면 | 메인 화면-인기 상품 | 전체 상품 | 상품 검색 |
+|--------|--------|--------|--------|
+|![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![](https://ifh.cc/g/h9AKZo.jpg) | ![](https://ifh.cc/g/apX6cJ.png)|
+
+| 로그인 | 회원가입 | 장바구니-모달 창 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/G6FByr.png)|![](https://ifh.cc/g/nn0GkY.png)|![](https://ifh.cc/g/5osoYt.jpg)
+
+| 장바구니 | 상품결제 | 결제완료 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/Qz7jVa.png) |![](https://ifh.cc/g/mVrsnf.png) |![](https://ifh.cc/g/byDPTs.png) |
+
+| 결제완료-배송준비 | 사용자 주문 목록 | 관리자페이지-상품관리 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) | ![](https://ifh.cc/g/86gTMF.png)|
+
+| 관리자페이지-상품관리(2) | 관리자페이지-카테고리관리 | 관리자페이지-주문관리 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/6s6rav.png) |![](https://ifh.cc/g/dXKzqL.png) |![](https://ifh.cc/g/6ypA8y.png) |
+
 
 ## 🚀 빠른 시작
 
@@ -80,33 +109,6 @@ npm run dev
 - 👨‍💼 **관리자 대시보드**
 - 📱 **반응형 웹 디자인**
 - 🔍 **실시간 검색 및 필터링**
-
----
-
-## 🚀 주요 기능
-
-### 👤 사용자 기능
-- ✅ **회원가입/로그인**: JWT 토큰 기반 인증
-- ✅ **프로필 관리**: 개인정보 수정
-- ✅ **상품 조회**: 목록, 상세, 검색, 필터링
-- ✅ **장바구니**: 상품 추가/수정/삭제, 수량 조절
-- ✅ **주문 관리**: 주문 생성, 조회, 취소
-- ✅ **주문 내역**: 개인 주문 히스토리
-
-### 👨‍💼 관리자 기능
-- ✅ **상품 관리**: CRUD, 할인율 설정, 재고 관리
-- ✅ **카테고리 관리**: 상품 분류 시스템
-- ✅ **주문 관리**: 전체 주문 조회, 상태 변경
-- ✅ **파일 업로드**: 상품 이미지 업로드
-- ✅ **통계 대시보드**: 매출, 주문 현황
-
-### 🛍️ 쇼핑 기능
-- ✅ **상품 분류**: 인기상품, 신상품 태깅
-- ✅ **할인 시스템**: 동적 할인율 계산
-- ✅ **검색 기능**: 실시간 검색 (최소 2글자)
-- ✅ **필터링**: 카테고리별, 가격별 필터
-- ✅ **페이징**: 페이지네이션 지원
-- ✅ **슬라이더**: 홈페이지 상품 슬라이더
 
 ---
 
