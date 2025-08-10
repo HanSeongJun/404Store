@@ -248,23 +248,6 @@ function AdminManagement() {
         관리자 페이지
       </h1>
       
-      {/* 디버깅 정보 */}
-      <div style={{ 
-        backgroundColor: '#F3F4F6', 
-        padding: '1rem', 
-        borderRadius: '0.5rem', 
-        marginBottom: '2rem',
-        fontSize: '0.875rem'
-      }}>
-        <div style={{ fontWeight: '600', marginBottom: '0.5rem' }}>디버깅 정보:</div>
-        <div>현재 사용자: {authService.getCurrentUser()?.name || '없음'} ({authService.getCurrentUser()?.role || '없음'})</div>
-        <div>토큰: {authService.getToken() ? '있음' : '없음'}</div>
-        <div>현재 탭: {activeTab}</div>
-        <div>로딩 상태: {loading ? '로딩 중' : '완료'}</div>
-        <div>상품 수: {products.length}개</div>
-        <div>카테고리 수: {categories.length}개</div>
-        <div>주문 수: {orders.length}개</div>
-      </div>
 
       {/* 탭 버튼 */}
       <div style={{ 

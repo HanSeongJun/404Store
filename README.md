@@ -24,6 +24,7 @@
 - [🚀 빠른 시작](#-빠른-시작)
 - [프로젝트 개요](#-프로젝트-개요)
 - [주요 기능](#-주요-기능)
+- [🏗️ 시스템 아키텍처](#️-시스템-아키텍처)
 - [기술 스택](#️-기술-스택)
 - [프로젝트 구조](#-프로젝트-구조)
 - [설치 및 실행](#-설치-및-실행)
@@ -106,6 +107,81 @@ npm run dev
 - ✅ **필터링**: 카테고리별, 가격별 필터
 - ✅ **페이징**: 페이지네이션 지원
 - ✅ **슬라이더**: 홈페이지 상품 슬라이더
+
+---
+
+## 🏗️ 시스템 아키텍처
+
+### 📊 전체 아키텍처 다이어그램
+
+```mermaid
+graph TB
+    subgraph "🌐 Frontend (React)"
+        A[사용자 인터페이스]
+        B[상태 관리]
+        C[API 호출]
+    end
+    
+    subgraph "🔒 API Gateway & Security"
+        D[JWT 인증]
+        E[권한 검증]
+        F[CORS 설정]
+    end
+    
+    subgraph "⚙️ Backend (Spring Boot)"
+        G[Controller Layer]
+        H[Service Layer]
+        I[Repository Layer]
+    end
+    
+    subgraph "🗄️ Data Layer"
+        J[H2 Database]
+        K[File Storage]
+    end
+    
+    A --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    H --> K
+    
+    style A fill:#61DAFB
+    style G fill:#6DB33F
+    style J fill:#000000
+    style K fill:#FF6B6B
+```
+
+### 🔄 데이터 흐름
+
+```mermaid
+sequenceDiagram
+    participant U as 사용자
+    participant F as Frontend
+    participant A as Auth
+    participant C as Controller
+    participant S as Service
+    participant R as Repository
+    participant DB as Database
+    
+    U->>F: 로그인 요청
+    F->>A: 인증 요청
+    A->>F: JWT 토큰 반환
+    F->>C: API 요청 (토큰 포함)
+    C->>A: 토큰 검증
+    A->>C: 인증 성공
+    C->>S: 비즈니스 로직 처리
+    S->>R: 데이터 조회/수정
+    R->>DB: SQL 실행
+    DB->>R: 결과 반환
+    R->>S: 데이터 반환
+    S->>C: 응답 데이터
+    C->>F: API 응답
+    F->>U: 결과 표시
+```
 
 ---
 
