@@ -1,9 +1,6 @@
 # 🛒 E-Commerce 쇼핑몰 프로젝트
-**Spring Boot + React로 구현한 풀스택 쇼핑몰 시스템**
 
 실무에서 사용하는 주요 기능들을 모두 포함한 완전한 이커머스 플랫폼입니다.
-
----
 
 ## 🚀 기술 스택
 
@@ -14,11 +11,39 @@
 | **DB** | ![H2 Database](https://img.shields.io/badge/H2%20Database-007DB8?style=for-the-badge&logo=h2&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)| 
 | **Tools** | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white) ![DataGrip](https://img.shields.io/badge/DataGrip-000000?style=for-the-badge&logo=datagrip&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) |
 
----
 
 ## 📊 데이터베이스 스키마 (ERD)
+
 추후 추가
----
+
+## 🌟 주요 기능
+
+### 👤 사용자 기능
+- **회원가입/로그인**: JWT 토큰 기반 인증
+- **프로필 관리**: 개인정보 수정
+- **상품 조회**: 목록, 상세, 검색, 필터링
+- **장바구니**: 상품 추가/수정/삭제, 수량 조절
+- **주문 관리**: 주문 생성, 조회, 취소
+- **주문 내역**: 개인 주문 히스토리
+
+### 👨‍💼 관리자 기능
+- **상품 관리**: CRUD, 할인율 설정, 재고 관리
+- **카테고리 관리**: 상품 분류 시스템
+- **주문 관리**: 전체 주문 조회, 상태 변경
+- **파일 업로드**: 상품 이미지 업로드
+- **통계 대시보드**: 매출, 주문 현황
+
+### 🛍️ 쇼핑 기능
+- **상품 분류**: 인기상품, 신상품 태깅
+- **할인 시스템**: 동적 할인율 계산
+- **검색 기능**: 실시간 검색 (최소 2글자)
+- **필터링**: 카테고리별, 가격별 필터
+- **페이징**: 페이지네이션 지원
+- **슬라이더**: 홈페이지 상품 슬라이더
+
+
+
+
 
 ## 🚀 빠른 시작
 
@@ -61,33 +86,6 @@ npm run dev
 - 👨‍💼 **관리자 대시보드**
 - 📱 **반응형 웹 디자인**
 - 🔍 **실시간 검색 및 필터링**
-
----
-
-## 🚀 주요 기능
-
-### 👤 사용자 기능
-- ✅ **회원가입/로그인**: JWT 토큰 기반 인증
-- ✅ **프로필 관리**: 개인정보 수정
-- ✅ **상품 조회**: 목록, 상세, 검색, 필터링
-- ✅ **장바구니**: 상품 추가/수정/삭제, 수량 조절
-- ✅ **주문 관리**: 주문 생성, 조회, 취소
-- ✅ **주문 내역**: 개인 주문 히스토리
-
-### 👨‍💼 관리자 기능
-- ✅ **상품 관리**: CRUD, 할인율 설정, 재고 관리
-- ✅ **카테고리 관리**: 상품 분류 시스템
-- ✅ **주문 관리**: 전체 주문 조회, 상태 변경
-- ✅ **파일 업로드**: 상품 이미지 업로드
-- ✅ **통계 대시보드**: 매출, 주문 현황
-
-### 🛍️ 쇼핑 기능
-- ✅ **상품 분류**: 인기상품, 신상품 태깅
-- ✅ **할인 시스템**: 동적 할인율 계산
-- ✅ **검색 기능**: 실시간 검색 (최소 2글자)
-- ✅ **필터링**: 카테고리별, 가격별 필터
-- ✅ **페이징**: 페이지네이션 지원
-- ✅ **슬라이더**: 홈페이지 상품 슬라이더
 
 ---
 
