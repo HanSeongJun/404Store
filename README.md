@@ -1,6 +1,9 @@
 # 🛒 E-Commerce 쇼핑몰 프로젝트
 **Spring Boot + React로 구현한 풀스택 쇼핑몰 시스템**
+
 실무에서 사용하는 주요 기능들을 모두 포함한 완전한 이커머스 플랫폼입니다.
+
+---
 
 ## 🚀 기술 스택
 
@@ -11,27 +14,10 @@
 | **DB** | ![H2 Database](https://img.shields.io/badge/H2%20Database-007DB8?style=for-the-badge&logo=h2&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)| 
 | **Tools** | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white) ![DataGrip](https://img.shields.io/badge/DataGrip-000000?style=for-the-badge&logo=datagrip&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) |
 
-
 ---
 
-## 📋 목차
-
-- [🚀 빠른 시작](#-빠른-시작)
-- [프로젝트 개요](#-프로젝트-개요)
-- [주요 기능](#-주요-기능)
-- [🏗️ 시스템 아키텍처](#️-시스템-아키텍처)
-- [기술 스택](#️-기술-스택)
-- [프로젝트 구조](#-프로젝트-구조)
-- [설치 및 실행](#-설치-및-실행)
-- [데이터베이스 설계](#-데이터베이스-설계)
-- [API 명세서](#-api-명세서)
-- [주요 페이지](#-주요-페이지)
-- [핵심 기능 설명](#-핵심-기능-설명)
-- [개발 환경](#-개발-환경)
-- [배포 가이드](#-배포-가이드)
-- [기여 가이드](#-기여-가이드)
-- [라이선스](#-라이선스)
-
+## 📊 데이터베이스 스키마 (ERD)
+추후 추가
 ---
 
 ## 🚀 빠른 시작
