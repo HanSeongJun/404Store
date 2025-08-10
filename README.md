@@ -194,128 +194,72 @@ etc/
 ---
 
 ## 📚 API 명세서
+### 인증 API
 
-### 🔐 인증 API
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| POST | /api/auth/login | 로그인 | {email, password} | {token, user} |
+| POST | /api/auth/signup | 회원가입 | {email, password, name, phone, address} | {message} |
+| GET | /api/auth/profile | 프로필 조회 | - | {user} |
+| PUT | /api/auth/profile | 프로필 수정 | {name, phone, address} | {user} |
 
-#### 회원가입
-```http
-POST /api/auth/signup
-Content-Type: application/json
+### 사용자 관리 API
 
-{
-  "email": "user@example.com",
-  "password": "password123",
-  "name": "홍길동",
-  "phone": "010-1234-5678",
-  "address": "서울시 강남구"
-}
-```
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | /api/users | 전체 사용자 조회 (관리자) | - | [{user}] |
+| GET | /api/users/{id} | 특정 사용자 조회 | - | {user} |
+| PUT | /api/users/{id} | 사용자 정보 수정 (관리자) | {name, phone, address, role} | {user} |
+| DELETE | /api/users/{id} | 사용자 삭제 (관리자) | - | {message} |
 
-#### 로그인
-```http
-POST /api/auth/login
-Content-Type: application/json
+### 카테고리 관리 API
 
-{
-  "email": "user@example.com",
-  "password": "password123"
-}
-```
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | /api/categories | 전체 카테고리 조회 | - | [{category}] |
+| GET | /api/categories/{id} | 특정 카테고리 조회 | - | {category} |
+| POST | /api/categories | 카테고리 생성 (관리자) | {name, description} | {category} |
+| PUT | /api/categories/{id} | 카테고리 수정 (관리자) | {name, description} | {category} |
+| DELETE | /api/categories/{id} | 카테고리 삭제 (관리자) | - | {message} |
 
-**응답 예시:**
-```json
-{
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "user": {
-    "id": 1,
-    "email": "user@example.com",
-    "name": "홍길동",
-    "role": "USER"
-  }
-}
-```
+### 상품 관리 API
 
-### 📦 상품 API
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | /api/products | 전체 상품 조회 | ?page&size&category&search | {content, totalPages, totalElements} |
+| GET | /api/products/{id} | 특정 상품 조회 | - | {product} |
+| GET | /api/products/featured | 인기 상품 조회 | - | [{product}] |
+| GET | /api/products/new | 신상품 조회 | - | [{product}] |
+| POST | /api/products | 상품 생성 (관리자) | {name, description, originalPrice, price, discountRate, stockQuantity, imageUrl, isFeatured, isNew, categoryId} | {product} |
+| PUT | /api/products/{id} | 상품 수정 (관리자) | {name, description, originalPrice, price, discountRate, stockQuantity, imageUrl, isFeatured, isNew, categoryId} | {product} |
+| DELETE | /api/products/{id} | 상품 삭제 (관리자) | - | {message} |
 
-#### 상품 목록 조회
-```http
-GET /api/products?page=0&size=10&category=1&search=노트북&sort=price,asc
-Authorization: Bearer {token}
-```
+### 장바구니 API
 
-**쿼리 파라미터:**
-- `page`: 페이지 번호 (0부터 시작)
-- `size`: 페이지 크기
-- `category`: 카테고리 ID
-- `search`: 검색어 (최소 2글자)
-- `sort`: 정렬 기준 (price,asc / price,desc / created,desc)
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | /api/cart | 장바구니 조회 | - | [{cartItem}] |
+| POST | /api/cart | 장바구니에 상품 추가 | {productId, quantity} | {cartItem} |
+| PUT | /api/cart/{id} | 장바구니 수량 수정 | {quantity} | {cartItem} |
+| DELETE | /api/cart/{id} | 장바구니에서 상품 제거 | - | {message} |
+| DELETE | /api/cart | 장바구니 전체 비우기 | - | {message} |
 
-#### 상품 상세 조회
-```http
-GET /api/products/{id}
-Authorization: Bearer {token}
-```
+### 주문 관리 API
 
-### 🛒 장바구니 API
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| GET | /api/orders | 내 주문 목록 조회 | - | [{order}] |
+| GET | /api/orders/{id} | 특정 주문 조회 | - | {order} |
+| GET | /api/orders/all | 전체 주문 조회 (관리자) | ?page&size&status | {content, totalPages, totalElements} |
+| POST | /api/orders | 주문 생성 | {cartItemIds, shippingAddress, recipientName, recipientPhone, paymentMethod} | {order} |
+| PUT | /api/orders/{id}/status | 주문 상태 수정 (관리자) | {status} | {order} |
+| DELETE | /api/orders/{id} | 주문 취소 | - | {message} |
 
-#### 장바구니 조회
-```http
-GET /api/cart
-Authorization: Bearer {token}
-```
+### 파일 업로드 API
 
-#### 상품 추가
-```http
-POST /api/cart
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "productId": 1,
-  "quantity": 2
-}
-```
-
-### 📋 주문 API
-
-#### 주문 생성
-```http
-POST /api/orders
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "items": [
-    {
-      "productId": 1,
-      "quantity": 2
-    }
-  ],
-  "shippingAddress": "서울시 강남구 테헤란로 123",
-  "recipientName": "홍길동",
-  "recipientPhone": "010-1234-5678",
-  "paymentMethod": "virtual"
-}
-```
-
-#### 주문 목록 조회
-```http
-GET /api/orders
-Authorization: Bearer {token}
-```
-
-### 📁 파일 업로드 API
-
-#### 이미지 업로드
-```http
-POST /api/upload
-Authorization: Bearer {token}
-Content-Type: multipart/form-data
-
-file: [이미지 파일]
-```
-
-> 📖 **상세 API 문서**: [API_SPECIFICATION.md](./API_SPECIFICATION.md)
+| Method | Endpoint | Description | Request Body | Response |
+|--------|----------|-------------|--------------|----------|
+| POST | /api/upload | 파일 업로드 | MultipartFile | {fileName, fileUrl} |
 
 ---
 
