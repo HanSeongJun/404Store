@@ -49,13 +49,13 @@
 |--------|--------|--------|
 |![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![](https://ifh.cc/g/h9AKZo.jpg)
 
-| 지역별 명소 | 명소별 글 목록 | 글 내용 |
+| 로그인 | 회원가입 | 글 내용 |
 |--------|--------|--------|
-|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/6bzRtl.jpg)
+|![](https://ifh.cc/g/G6FByr.png)|![](https://ifh.cc/g/nn0GkY.png)|![]()
 
 | 글쓰기 | 로그인 | 회원가입 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/KK6tGn.png) |![](https://ifh.cc/g/H3D5nj.png) |![](https://ifh.cc/g/fdQ6mN.png) |
+|![]() |![]() |![]() |
 
 
 
