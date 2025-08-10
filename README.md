@@ -61,6 +61,10 @@
 |--------|--------|--------|
 |![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) |![](https://ifh.cc/g/86gTMF.png) |
 
+| 관리자페이지-상품관리 | 관리자페이지-카테고리관리 | 관리자페이지-주문관리 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/86gTMF.png) |![](https://ifh.cc/g/dXKzqL.png) |![](https://ifh.cc/g/6ypA8y.png) |
+
 
 
 
