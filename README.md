@@ -45,9 +45,9 @@
 ### 시연 영상
 
 ### 사용자 화면
-| 메인 화면 | 메인 화면 2 | 날씨 지도 |
+| 메인 화면 | 메인 화면-인기 상품 | 전체 상품 및 상품 검색 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![map](https://ifh.cc/g/cdk7JG.png)
+|![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![](https://ifh.cc/g/h9AKZo.jpg)
 
 | 지역별 명소 | 명소별 글 목록 | 글 내용 |
 |--------|--------|--------|
