@@ -45,7 +45,7 @@
 ### 시연 영상
 
 ### 사용자 화면
-| 메인 화면 | 메인 화면-인기 상품 | 전체 상품 | 전체 상품 |
+| 메인 화면 | 메인 화면-인기 상품 | 전체 상품 | 상품 검색 |
 |--------|--------|--------|--------|
 |![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![](https://ifh.cc/g/h9AKZo.jpg) | ![](https://ifh.cc/g/apX6cJ.png)|
 
@@ -59,13 +59,11 @@
 
 | 결제완료-배송준비 | 사용자 주문 목록 | 관리자페이지-상품관리 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) |![](https://ifh.cc/g/86gTMF.png) |
+|![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) | |![](https://ifh.cc/g/86gTMF.png)|
 
-| 관리자페이지-상품관리 | 관리자페이지-카테고리관리 | 관리자페이지-주문관리 |
+| 관리자페이지-상품관리(2) | 관리자페이지-카테고리관리 | 관리자페이지-주문관리 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/86gTMF.png) |![](https://ifh.cc/g/dXKzqL.png) |![](https://ifh.cc/g/6ypA8y.png) |
-
-
+|![](https://ifh.cc/g/6s6rav.png) |![](https://ifh.cc/g/dXKzqL.png) |![](https://ifh.cc/g/6ypA8y.png) |
 
 
 ## 🚀 빠른 시작
