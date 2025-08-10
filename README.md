@@ -59,7 +59,7 @@
 
 | 결제완료-배송준비 | 사용자 주문 목록 | 관리자페이지-상품관리 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) | |![](https://ifh.cc/g/86gTMF.png)|
+|![](https://ifh.cc/g/2wo8zc.png) |![](https://ifh.cc/g/7ltpVM.png) | ![](https://ifh.cc/g/86gTMF.png)|
 
 | 관리자페이지-상품관리(2) | 관리자페이지-카테고리관리 | 관리자페이지-주문관리 |
 |--------|--------|--------|
