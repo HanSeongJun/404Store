@@ -1,22 +1,8 @@
 # 🛒 E-Commerce 쇼핑몰 프로젝트
-
-<div align="center">
-
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.0-6DB33F?style=for-the-badge&logo=spring-boot)
-![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react)
-![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=java)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.11-06B6D4?style=for-the-badge&logo=tailwind-css)
-![H2 Database](https://img.shields.io/badge/H2%20Database-2.2.224-000000?style=for-the-badge&logo=h2)
-![Maven](https://img.shields.io/badge/Maven-3.9.11-C71A36?style=for-the-badge&logo=apache-maven)
-
 **Spring Boot + React로 구현한 풀스택 쇼핑몰 시스템**
-
 실무에서 사용하는 주요 기능들을 모두 포함한 완전한 이커머스 플랫폼입니다.
 
-[🚀 빠른 시작](#-빠른-시작) • [📋 기능 목록](#-주요-기능) • [🛠️ 기술 스택](#️-기술-스택) • [📖 문서](#-문서)
-
-</div>
-
+## 🚀 기술 스택
 | **Frontend** |![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)|
 |------|------|
 | **Backend** |![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)|
