@@ -1,0 +1,1305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+/* 마켓컬리 컬러 팔레트 */
+:root {
+  --kurly-green: #4A7C59;
+  --kurly-green-light: #5A8C69;
+  --kurly-green-dark: #3A6C49;
+  --kurly-yellow: #FFD600;
+  --kurly-yellow-light: #FFE600;
+  --kurly-gray-50: #F8F9FA;
+  --kurly-gray-100: #F1F3F4;
+  --kurly-gray-200: #E8EAED;
+  --kurly-gray-300: #DADCE0;
+  --kurly-gray-400: #BDC1C6;
+  --kurly-gray-500: #9AA0A6;
+  --kurly-gray-600: #80868B;
+  --kurly-gray-700: #5F6368;
+  --kurly-gray-800: #3C4043;
+  --kurly-gray-900: #202124;
+  --kurly-red: #FF3B30;
+  --kurly-orange: #FF9500;
+}
+
+/* 기본 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--kurly-gray-900);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* 마켓컬리 스타일 버튼 */
+.btn-kurly {
+  background-color: var(--kurly-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly:hover {
+  background-color: var(--kurly-green-light);
+}
+
+.btn-kurly-outline {
+  border: 2px solid var(--kurly-green);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-kurly-outline:hover {
+  background-color: var(--kurly-green);
+  color: white;
+}
+
+.btn-kurly-yellow {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-kurly-yellow:hover {
+  background-color: var(--kurly-yellow-light);
+}
+
+/* 마켓컬리 카드 스타일 */
+.card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: box-shadow 0.2s;
+}
+
+.card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 입력 필드 */
+.input-kurly {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--kurly-gray-300);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.input-kurly:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--kurly-green);
+}
+
+/* 마켓컬리 헤더 스타일 */
+.header-kurly {
+  background-color: white;
+  border-bottom: 1px solid var(--kurly-gray-100);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 네비게이션 */
+.nav-kurly {
+  color: var(--kurly-gray-700);
+  transition: color 0.2s;
+}
+
+.nav-kurly:hover {
+  color: var(--kurly-green);
+}
+
+/* 마켓컬리 상품 카드 */
+.product-card-kurly {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--kurly-gray-100);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.product-card-kurly:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 마켓컬리 배지 */
+.badge-kurly {
+  background-color: var(--kurly-yellow);
+  color: var(--kurly-green);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-new {
+  background-color: var(--kurly-red);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.badge-discount {
+  background-color: var(--kurly-orange);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
