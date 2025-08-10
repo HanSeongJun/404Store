@@ -3,6 +3,8 @@
 404Store는 개인 학습을 위해 개발한 풀스택 쇼핑몰 웹 애플리케이션입니다. 실제 온라인 쇼핑몰의 기본 기능들을 구현하며, 웹 개발의 전반적인 흐름을 경험하고 실전 역량을 쌓는 데 중점을 두었습니다.
 사용자 장바구니 담기, 주문 생성 및 주문 내역 확인 기능과 관리자용 상품 등록, 수정, 삭제 기능을 포함하여 쇼핑몰의 핵심 흐름을 구현했습니다.
 
+---
+
 ## 🚀 기술 스택
 
 | **Frontend** | ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)|
@@ -11,6 +13,8 @@
 | **Server** | ![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black) ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white) |
 | **DB** | ![H2 Database](https://img.shields.io/badge/H2%20Database-007DB8?style=for-the-badge&logo=h2&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![AWS RDS](https://img.shields.io/badge/AWS%20RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)| 
 | **Tools** | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white) ![DataGrip](https://img.shields.io/badge/DataGrip-000000?style=for-the-badge&logo=datagrip&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) |
+
+---
 
 ## 🌟 주요 기능
 
@@ -37,6 +41,7 @@
 - **페이징**: 페이지네이션 지원
 - **슬라이더**: 홈페이지 상품 슬라이더
 
+---
 
 ## 📊 데이터베이스 스키마 (ERD)
 
@@ -66,10 +71,9 @@
 |--------|--------|--------|
 |![](https://ifh.cc/g/6s6rav.png) |![](https://ifh.cc/g/dXKzqL.png) |![](https://ifh.cc/g/6ypA8y.png) |
 
+---
 
-## 🚀 빠른 시작
-
-### ⚡ 1분 만에 실행하기
+## 🚀 설치 및 실행
 
 ```bash
 # 1. 프로젝트 클론
@@ -186,45 +190,6 @@ etc/
 ```
 
 ---
-
-## 🚀 설치 및 실행
-
-### 사전 요구사항
-- **Java 17** 이상
-- **Node.js 18** 이상
-- **npm** 또는 **yarn**
-
-### 📥 1. 프로젝트 클론
-```bash
-git clone <repository-url>
-cd etc
-```
-
-### ⚙️ 2. 백엔드 실행
-```bash
-# 프로젝트 루트에서
-mvn clean install
-mvn spring-boot:run
-```
-
-### 🎨 3. 프론트엔드 실행
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### 🌐 4. 접속 정보
-- **프론트엔드**: http://localhost:5173
-- **백엔드 API**: http://localhost:8080
-- **H2 데이터베이스 콘솔**: http://localhost:8080/h2-console
-  - JDBC URL: `jdbc:h2:mem:testdb`
-  - Username: `sa`
-  - Password: (비어있음)
-
-### 🔑 5. 테스트 계정
-- **관리자**: `admin@shop.com` / `admin123`
-- **일반 사용자**: `user@shop.com` / `user123`
 
 ## 📚 API 명세서
 
