@@ -45,7 +45,17 @@
 ### 시연 영상
 
 ### 사용자 화면
+| 메인 화면 | 메인 화면 2 | 날씨 지도 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![map](https://ifh.cc/g/cdk7JG.png)
 
+| 지역별 명소 | 명소별 글 목록 | 글 내용 |
+|--------|--------|--------|
+|![SPOT](https://ifh.cc/g/ALAqxH.jpg)|![board](https://ifh.cc/g/QkpXqK.jpg)|![글](https://ifh.cc/g/6bzRtl.jpg)
+
+| 글쓰기 | 로그인 | 회원가입 |
+|--------|--------|--------|
+|![](https://ifh.cc/g/KK6tGn.png) |![](https://ifh.cc/g/H3D5nj.png) |![](https://ifh.cc/g/fdQ6mN.png) |
 
 
 
