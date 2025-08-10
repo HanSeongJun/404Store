@@ -49,9 +49,9 @@
 |--------|--------|--------|
 |![](https://ifh.cc/g/9m1lVd.jpg) | ![](https://ifh.cc/g/WvPPQG.jpg)| ![](https://ifh.cc/g/h9AKZo.jpg)
 
-| 로그인 | 회원가입 | 글 내용 |
+| 로그인 | 회원가입 | 장바구니-모달 창 |
 |--------|--------|--------|
-|![](https://ifh.cc/g/G6FByr.png)|![](https://ifh.cc/g/nn0GkY.png)|![]()
+|![](https://ifh.cc/g/G6FByr.png)|![](https://ifh.cc/g/nn0GkY.png)|![](https://ifh.cc/g/5osoYt.jpg)
 
 | 글쓰기 | 로그인 | 회원가입 |
 |--------|--------|--------|
