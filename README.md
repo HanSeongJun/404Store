@@ -16,7 +16,7 @@
 [🚀 빠른 시작](#-빠른-시작) • [📋 기능 목록](#-주요-기능) • [🛠️ 기술 스택](#️-기술-스택) • [📖 문서](#-문서)
 
 </div>
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
 ---
 
 ## 📋 목차
